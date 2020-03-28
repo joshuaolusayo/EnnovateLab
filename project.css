@@ -1,0 +1,382 @@
+* {
+	/*font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Lobster', cursive;*/
+	font-family: 'Poppins', sans-serif;
+	font-family: 'Muli', sans-serif;
+}
+
+#nav a.active {
+	color: hsla(45, 100%, 51%, 1) !important;
+}
+
+.text-small {
+	font-size: 14px;
+}
+
+.navbar-toggler {
+	outline-color: hsla(45, 100%, 51%, 1) !important;
+}
+
+.nav-dark {
+	background: black !important;
+}
+
+.banner {
+	background: hsla(45, 100%, 51%, 1) url("Images/busy.png") right center;
+	height: 100vh;
+	background-size: cover;
+	background-position: 80% 50%;
+	background-attachment: fixed;
+}
+
+.bg-lightgray {
+	background: #efefef;
+}
+
+.project1 {
+	background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7), rgba(0,0,0,1)), url("Images/creative.jpg");
+}
+
+.project1:hover {
+	background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,1)), url("Images/creative.jpg");
+}
+
+.project2 {
+	background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7), rgba(0,0,0,1)), url("Images/design.jpg");
+}
+
+.project2:hover {
+	background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,1)), url("Images/design.jpg");
+}
+
+.project3 {
+	background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7), rgba(0,0,0,1)), url("Images/kids.jpg");
+}
+
+.project3:hover {
+	background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,1)), url("Images/kids.jpg");
+}
+
+.project4 {
+	background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7), rgba(0,0,0,1)), url("Images/work.jpg");
+}
+
+.project4:hover {
+	background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,1)), url("Images/work.jpg");
+}
+
+.project5 {
+	background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7), rgba(0,0,0,1)), url("Images/G.png");
+}
+
+.project5:hover {
+	background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,1)), url("Images/G.png");
+}
+
+.project6 {
+	background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7), rgba(0,0,0,1)), url("Images/eLabs-Summer-of-code.jpg");
+}
+
+.project6:hover {
+	background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,1)), url("Images/eLabs-Summer-of-code.jpg");
+}
+
+.project-container {
+	min-height: 350px;
+	padding: 0;
+	background-size: cover;
+	background-position: center;
+	color: white;
+	position: relative;
+	transform: scale(1);
+	transition: transform ease-in 250ms, background ease-in 250ms;
+	padding: 25px !important;
+}
+
+.project-container::before, .project-container::after {
+	content: '';
+	top: 20px;
+	right: 20px;
+	bottom: 20px;
+	left: 20px;
+	position: absolute;
+}
+
+.project-container::before {
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	transform: scale(0, 1);
+	transition: transform ease-out 250ms;
+}
+
+.project-container:hover::before {
+	transform: scale(1.1, 1);
+}
+
+.project-container::after {
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+	transform: scale(1, 0);
+	transition: transform ease-out 250ms;
+}
+
+.project-container:hover::after {
+	transform: scale(1, 1.1);
+}
+
+.project-container:hover {
+	min-height: 350px;
+	padding: 0;
+	background-size: cover;
+	background-position: center;
+	color: white;
+	position: relative;
+	animation-name: change-content;
+	animation-fill-mode: forwards;
+	animation-duration: 250ms;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes change-content {
+	from { justify-content: flex-end; }
+	to { justify-content: center; }
+}
+
+.co-work {
+	background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.8)), url("Images/work.jpg");
+}
+
+.bg-learn-more {
+	background: url('Images/learn-more.jpg'), no-repeat, center;
+	background-attachment: fixed;
+	min-height: 500px;
+	background-size: cover;
+	background-position: center;
+}
+
+.text-lightgray {
+	color: #c5c5c5;
+}
+
+#slide-story .carousel-item {
+	height: 70vh;
+}
+
+#slide-story .carousel-indicators li {
+	width: 12px;
+	height: 12px;
+	border-radius: 100%;
+}
+
+#slide-story .carousel-control-prev-icon,
+#slide-story .carousel-control-next-icon {
+	width: 20px;
+	height: 20px;
+}
+
+#slide-story .carousel-item img {
+	object-fit: cover;
+	object-position: 55% 25%;
+}
+
+.carousel-caption {
+	top: 0 !important;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.bg-story {
+	background: #1f2223a6;
+}
+
+.zin {
+	z-index: 11;
+}
+
+.margin {
+	margin: 6em 0;
+}
+
+.font-muli {
+	font-family: 'Muli', sans-serif;
+}
+
+.font-poppins {
+	font-family: 'Poppins', sans-serif;
+}
+
+.font-corbel {
+	font-family: corbel;
+}
+
+.font-big {
+	font-size: 20px !important;
+}
+
+.font-size-big {
+	font-size: 84px !important;
+	font-weight: 84px !important;
+}
+
+.bg-lightgrey {
+	background: #f7f7f7;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.img-br {
+	border-radius: 10px;
+}
+
+#licLogo {
+	max-width: 100px;
+}
+
+.bg-img {
+	background: url("Images/lic01.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+
+.carousel-overlay {
+	background: hsla(0,0,0,0.5);
+}
+
+.px-6 {
+	padding-left: 5rem;
+	padding-right: 5rem;
+}
+
+.lic-nav .nav-link.active {
+	color: orange !important;
+}
+
+.lic-nav .nav-link:hover:not(.active) {
+	color: orange !important;
+}
+
+#caro {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#carousel-overlay {
+	background: hsla(0,0%,0%,0.35);
+}
+
+.lic-carousel .carousel-item .carousel-caption {
+	top: auto !important;
+}
+
+.lic-carousel .carousel-control-prev,
+.lic-carousel .carousel-control-next,
+.lic-carousel .carousel-indicators {
+	z-index: 11;
+}
+
+.line-hait {
+	line-height: 30px;
+}
+
+.font-lobster {
+	font-family: 'Lobster', cursive;
+}
+
+.bg-blue {
+	background: blue;
+}
+
+.bg-sponsors {
+	background: url('Images/bg6.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.bg-sponsors-overlay {
+	background: hsl(0, 0%, 100%, 0.8);
+	width: 100%;
+	height: 100%;
+}
+
+.abtBanner {
+	background: orange url('Images/learn-more.jpg') no-repeat;
+	background-position: 30% 20%;
+	background-size: cover;
+	height: 400px;
+	width: 100%;
+	position: relative;
+}
+
+.card-header .pointer {
+	position: relative;
+}
+
+.card-header .pointer::before {
+	position: absolute;
+	display: block;
+	content: '+';
+	font-size: 20px;
+	right: 10px;
+	font-weight: bold;
+}
+
+.cntBanner {
+	background: orange url('Images/oic.jpg') no-repeat center top;
+	background-size: cover;
+	height: 400px;
+	width: 100%;
+	position: relative;
+}
+
+.bb {
+	border-bottom: 2px groove #000;
+}
+
+.txt-shadow {
+	text-shadow: 5px 3px 5px black;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+	border-color: hsla(45, 100%, 51%, 1);
+	box-shadow: none;
+}
+
+.contact-form textarea {
+	resize: none;
+}
+
+.lic-banner {
+	background: url("Images/lic02.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 400px;
+	position: relative;
+}
+
+.banner-overlay, .cnt-overlay {
+	position: absolute;
+	background: rgba(0,0,0,0.7);
+}
+
+.card-plus {
+	position: relative;
+}
+
+.card-plus::before {
+	position: absolute;
+	display: block;
+	content: '+';
+	right: 20px;
+}
+
+.card-plus:hover::before {
+	color: white;
+}

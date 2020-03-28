@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>#</title>
+</head>
+<body>
+	<script>
+		function scramble (word) {
+		let arr	
+	}
+		console.log('mike'.split(""));
+		let name = "alex".split('');
+		console.log(typeof (name));
+		console.log(name);
+		
+		function scramble(word){
+			let newWord = word.split('');
+			let scramb = " ";
+			let index;
+			for (let i = 0; i < word.length ; i++) {
+				index = Math.floor(Math.random ()* newWord.length);
+				scramb += newWord [index];
+				newWord.splice (index,1); 
+			}
+			return scramb.toLowerCase();
+		};
+		console.log(scramble('Alex'));
+		//console.log(Math.random()*6);
+
+
+	</script>
+</body>
+</html>
