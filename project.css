@@ -1,8 +1,9 @@
 * {
 	/*font-family: 'Source Sans Pro', sans-serif;
 	font-family: 'Lobster', cursive;*/
-	font-family: 'Poppins', sans-serif;
-	font-family: 'Muli', sans-serif;
+	font-family: "Poppins", sans-serif;
+	font-family: "Muli", sans-serif;
+	overflow-x: hidden;
 }
 
 #nav a.active {
@@ -29,56 +30,158 @@
 	background-attachment: fixed;
 }
 
+.tryAnimate {
+	transition: all 400ms ease-in;
+	transform: translateX(-100%);
+	opacity: 0;
+}
+
+.tryAnimate.active {
+	transform: translateX(0%);
+	opacity: 1;
+}
+
+.believeDiv {
+	overflow: hidden;
+}
+
+.believe {
+	opacity: 0;
+	transform: translateX(-100%);
+	transition: all 500ms ease-in;
+}
+
+.believe.active {
+	opacity: 1;
+	transform: translateX(0%);
+}
+
+.believeImg {
+	opacity: 0;
+	transform: translateX(100%);
+	visibility: hidden;
+	transition: all 500ms ease-in;
+}
+
+.believeImg.active {
+	opacity: 1;
+	visibility: visible;
+	transform: translateX(0%);
+}
+
+.footer {
+	transform: scale(0, 1);
+	opacity: 0;
+	transition: all 0.5s ease-in;
+}
+
+.footer.active {
+	transform: scale(1);
+	opacity: 1;
+}
+
 .bg-lightgray {
 	background: #efefef;
 }
 
+.projectDiv {
+	opacity: 0;
+	overflow: hidden;
+	transform: scale(0.1);
+	transition: all 500ms ease-in;
+}
+
+.projectDiv.active {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.borderBtm {
+	border-bottom: 1px solid hsla(45, 100%, 51%, 1);
+}
+
 .project1 {
-	background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7), rgba(0,0,0,1)), url("Images/creative.jpg");
+	background: linear-gradient(
+			rgba(0, 0, 0, 0),
+			rgba(0, 0, 0, 0.7),
+			rgba(0, 0, 0, 1)
+		),
+		url("Images/creative.jpg");
 }
 
 .project1:hover {
-	background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,1)), url("Images/creative.jpg");
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
+		url("Images/creative.jpg");
 }
 
 .project2 {
-	background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7), rgba(0,0,0,1)), url("Images/design.jpg");
+	background: linear-gradient(
+			rgba(0, 0, 0, 0),
+			rgba(0, 0, 0, 0.7),
+			rgba(0, 0, 0, 1)
+		),
+		url("Images/design.jpg");
 }
 
 .project2:hover {
-	background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,1)), url("Images/design.jpg");
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
+		url("Images/design.jpg");
 }
 
 .project3 {
-	background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7), rgba(0,0,0,1)), url("Images/kids.jpg");
+	background: linear-gradient(
+			rgba(0, 0, 0, 0),
+			rgba(0, 0, 0, 0.7),
+			rgba(0, 0, 0, 1)
+		),
+		url("Images/kids.jpg");
 }
 
 .project3:hover {
-	background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,1)), url("Images/kids.jpg");
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
+		url("Images/kids.jpg");
 }
 
 .project4 {
-	background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7), rgba(0,0,0,1)), url("Images/work.jpg");
+	background: linear-gradient(
+			rgba(0, 0, 0, 0),
+			rgba(0, 0, 0, 0.7),
+			rgba(0, 0, 0, 1)
+		),
+		url("Images/work.jpg");
 }
 
 .project4:hover {
-	background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,1)), url("Images/work.jpg");
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
+		url("Images/work.jpg");
 }
 
 .project5 {
-	background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7), rgba(0,0,0,1)), url("Images/G.png");
+	background: linear-gradient(
+			rgba(0, 0, 0, 0),
+			rgba(0, 0, 0, 0.7),
+			rgba(0, 0, 0, 1)
+		),
+		url("Images/G.png");
 }
 
 .project5:hover {
-	background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,1)), url("Images/G.png");
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
+		url("Images/G.png");
 }
 
 .project6 {
-	background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7), rgba(0,0,0,1)), url("Images/eLabs-Summer-of-code.jpg");
+	background: linear-gradient(
+			rgba(0, 0, 0, 0),
+			rgba(0, 0, 0, 0.7),
+			rgba(0, 0, 0, 1)
+		),
+		url("Images/eLabs-Summer-of-code.jpg");
 }
 
 .project6:hover {
-	background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,1)), url("Images/eLabs-Summer-of-code.jpg");
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
+		url("Images/eLabs-Summer-of-code.jpg");
 }
 
 .project-container {
@@ -93,8 +196,9 @@
 	padding: 25px !important;
 }
 
-.project-container::before, .project-container::after {
-	content: '';
+.project-container::before,
+.project-container::after {
+	content: "";
 	top: 20px;
 	right: 20px;
 	bottom: 20px;
@@ -138,16 +242,21 @@
 }
 
 @keyframes change-content {
-	from { justify-content: flex-end; }
-	to { justify-content: center; }
+	from {
+		justify-content: flex-end;
+	}
+	to {
+		justify-content: center;
+	}
 }
 
 .co-work {
-	background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.8)), url("Images/work.jpg");
+	background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8)),
+		url("Images/work.jpg");
 }
 
 .bg-learn-more {
-	background: url('Images/learn-more.jpg'), no-repeat, center;
+	background: url("Images/learn-more.jpg"), no-repeat, center;
 	background-attachment: fixed;
 	min-height: 500px;
 	background-size: cover;
@@ -199,11 +308,11 @@
 }
 
 .font-muli {
-	font-family: 'Muli', sans-serif;
+	font-family: "Muli", sans-serif;
 }
 
 .font-poppins {
-	font-family: 'Poppins', sans-serif;
+	font-family: "Poppins", sans-serif;
 }
 
 .font-corbel {
@@ -245,7 +354,7 @@
 }
 
 .carousel-overlay {
-	background: hsla(0,0,0,0.5);
+	background: hsla(0, 0, 0, 0.5);
 }
 
 .px-6 {
@@ -268,7 +377,7 @@
 }
 
 #carousel-overlay {
-	background: hsla(0,0%,0%,0.35);
+	background: hsla(0, 0%, 0%, 0.35);
 }
 
 .lic-carousel .carousel-item .carousel-caption {
@@ -286,7 +395,7 @@
 }
 
 .font-lobster {
-	font-family: 'Lobster', cursive;
+	font-family: "Lobster", cursive;
 }
 
 .bg-blue {
@@ -294,7 +403,7 @@
 }
 
 .bg-sponsors {
-	background: url('Images/bg6.jpg');
+	background: url("Images/bg6.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -306,7 +415,7 @@
 }
 
 .abtBanner {
-	background: orange url('Images/learn-more.jpg') no-repeat;
+	background: orange url("Images/learn-more.jpg") no-repeat;
 	background-position: 30% 20%;
 	background-size: cover;
 	height: 400px;
@@ -321,14 +430,14 @@
 .card-header .pointer::before {
 	position: absolute;
 	display: block;
-	content: '+';
+	content: "+";
 	font-size: 20px;
 	right: 10px;
 	font-weight: bold;
 }
 
 .cntBanner {
-	background: orange url('Images/oic.jpg') no-repeat center top;
+	background: orange url("Images/oic.jpg") no-repeat center top;
 	background-size: cover;
 	height: 400px;
 	width: 100%;
@@ -343,7 +452,8 @@
 	text-shadow: 5px 3px 5px black;
 }
 
-.contact-form input:focus, .contact-form textarea:focus {
+.contact-form input:focus,
+.contact-form textarea:focus {
 	border-color: hsla(45, 100%, 51%, 1);
 	box-shadow: none;
 }
@@ -361,9 +471,10 @@
 	position: relative;
 }
 
-.banner-overlay, .cnt-overlay {
+.banner-overlay,
+.cnt-overlay {
 	position: absolute;
-	background: rgba(0,0,0,0.7);
+	background: rgba(0, 0, 0, 0.7);
 }
 
 .card-plus {
@@ -373,7 +484,7 @@
 .card-plus::before {
 	position: absolute;
 	display: block;
-	content: '+';
+	content: "+";
 	right: 20px;
 }
 
