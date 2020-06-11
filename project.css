@@ -31,7 +31,7 @@
 }
 
 .tryAnimate {
-	transition: all 400ms ease-in;
+	transition: all 800ms ease-in;
 	transform: translateX(-100%);
 	opacity: 0;
 }
@@ -48,7 +48,7 @@
 .believe {
 	opacity: 0;
 	transform: translateX(-100%);
-	transition: all 500ms ease-in;
+	transition: all 1000ms ease-in;
 }
 
 .believe.active {
@@ -60,7 +60,7 @@
 	opacity: 0;
 	transform: translateX(100%);
 	visibility: hidden;
-	transition: all 500ms ease-in;
+	transition: all 1000ms ease-in;
 }
 
 .believeImg.active {
@@ -69,26 +69,12 @@
 	transform: translateX(0%);
 }
 
-.footer {
-	transform: scale(0, 1);
-	opacity: 0;
-	transition: all 0.5s ease-in;
-}
-
-.footer.active {
-	transform: scale(1);
-	opacity: 1;
-}
-
 .bg-lightgray {
 	background: #efefef;
 }
 
 .projectDiv {
-	opacity: 0;
 	overflow: hidden;
-	transform: scale(0.1);
-	transition: all 500ms ease-in;
 }
 
 .projectDiv.active {
@@ -235,19 +221,7 @@
 	background-position: center;
 	color: white;
 	position: relative;
-	animation-name: change-content;
-	animation-fill-mode: forwards;
-	animation-duration: 250ms;
-	animation-timing-function: ease-in-out;
-}
-
-@keyframes change-content {
-	from {
-		justify-content: flex-end;
-	}
-	to {
-		justify-content: center;
-	}
+	justify-content: center !important;
 }
 
 .co-work {

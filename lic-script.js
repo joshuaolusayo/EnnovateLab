@@ -9,7 +9,10 @@ let hiddenElements = document.getElementsByClassName("hidden");
 let hiddenElements2 = document.getElementsByClassName("hide");
 
 window.addEventListener("load", () => {
-	animate.classList.toggle("active");
+	if (animate) {
+		animate.classList.toggle("active");
+	}
+
 	for (i = 0; i < hiddenElements2.length; i++) {
 		if (
 			hiddenElements2[i].getBoundingClientRect().top -
@@ -31,7 +34,7 @@ window.addEventListener("resize", () => {
 	}
 });
 
-togglerButton.onclick = function () {
+togglerButton.onclick = () => {
 	if (togglerMode == false) {
 		togglerMode = true;
 	} else {
@@ -60,13 +63,13 @@ window.addEventListener("scroll", () => {
 	}
 });
 
-function changeSomeStyle() {
+changeSomeStyle = () => {
 	nav.classList.toggle("h-100");
 	toggler.style.marginTop = "12px";
 	nav.classList.toggle("align-items-start");
 }
 
-function changeStyle() {
+changeStyle = () => {
 	nav.classList.remove("bg-transparent");
 	nav.classList.add("bg-light");
 	nav.style.borderBottom = "1px solid hsla(45, 100%, 51%, 1)";
@@ -78,7 +81,7 @@ function changeStyle() {
 	nav.classList.add("navbar-light");
 }
 
-function defaultStyle() {
+defaultStyle = () => {
 	nav.classList.remove("bg-light");
 	nav.classList.add("bg-transparent");
 	nav.style.borderBottom = "none";
