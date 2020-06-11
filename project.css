@@ -162,12 +162,12 @@
 			rgba(0, 0, 0, 0.7),
 			rgba(0, 0, 0, 1)
 		),
-		url("Images/eLabs-Summer-of-code.jpg");
+		url("Images/eLabs-Summer-of-Code.jpg");
 }
 
 .project6:hover {
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
-		url("Images/eLabs-Summer-of-code.jpg");
+		url("Images/eLabs-Summer-of-Code.jpg");
 }
 
 .project-container {
