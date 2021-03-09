@@ -6,6 +6,10 @@
 	overflow-x: hidden;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    overflow-y: hidden;
+}
+
 #nav a.active {
 	color: hsla(45, 100%, 51%, 1) !important;
 }
