@@ -6,6 +6,10 @@
 	overflow-x: hidden;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    overflow-y: hidden;
+}
+
 #nav a.active {
 	color: hsla(45, 100%, 51%, 1) !important;
 }
@@ -162,12 +166,12 @@
 			rgba(0, 0, 0, 0.7),
 			rgba(0, 0, 0, 1)
 		),
-		url("Images/eLabs-Summer-of-code.jpg");
+		url("Images/eLabs-Summer-of-Code.jpg");
 }
 
 .project6:hover {
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
-		url("Images/eLabs-Summer-of-code.jpg");
+		url("Images/eLabs-Summer-of-Code.jpg");
 }
 
 .project-container {
